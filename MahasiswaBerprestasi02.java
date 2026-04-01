@@ -49,7 +49,7 @@ public class MahasiswaBerprestasi02 {
             Mahasiswa02 temp = listMhs[i];
             int j = i - 1;
 
-            while (j >= 0 && listMhs[j].ipk > temp.ipk) {
+            while (j >= 0 && listMhs[j].ipk < temp.ipk) {
                 listMhs[j + 1] = listMhs[j];
                 j--;
             }

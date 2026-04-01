@@ -41,3 +41,14 @@ Perulangan i berlangsung sebanyak 49 kali
 Tahap bubble sort juga sebanyak 49 tahap
 Karena rumusnya adalah n - 1 → 50 - 1 = 49
 2.	Modifikasi program diatas dimana data mahasiswa bersifat dinamis (input dari keyborad) yang terdiri dari nim, nama, kelas, dan ipk!
+
+5.3.7 Pertanyaan
+Pertanyaan: Di dalam method selection sort, terdapat baris program seperti di bawah ini:
+int idxMin = i;
+for (int j = i + 1; j < listMhs.length; j++) {
+    if (listMhs[j].ipk < listMhs[idxMin].ipk) {
+        idxMin = j;
+    }
+}
+Untuk apakah proses tersebut, jelaskan!
+Jawaban: Untuk mengubah insertion sort menjadi descending (urut dari besar ke kecil),hanya perlu mengubah kondisi perbandingan pada perulangan while.

@@ -52,3 +52,6 @@ for (int j = i + 1; j < listMhs.length; j++) {
 }
 Untuk apakah proses tersebut, jelaskan!
 Jawaban: Untuk mengubah insertion sort menjadi descending (urut dari besar ke kecil),hanya perlu mengubah kondisi perbandingan pada perulangan while.
+
+5.4.3 Pertanyaan
+Ubahlah fungsi pada InsertionSort sehingga fungsi ini dapat melaksanakan proses sorting dengan cara descending.

@@ -22,3 +22,22 @@ Jawaban: Artinya selama data di sebelah kiri lebih besar dari data yang sedang d
 
 4. Pada Insertion sort, apakah tujuan dari perintah data[j + 1] = temp;
 Jawaban:Perintah tersebut berfungsi untuk Menempatkan nilai (temp) ke posisi yang benar setelah proses pergeseran selesai.
+
+Pertanyaan dan Jawaban 5.3 Praktikum 2
+
+1. 1.	Perhatikan perulangan di dalam bubbleSort() di bawah ini:
+for (int i=0; i<listMhs.length-1; i++){
+    for (int j=1; j < listMhs.lenght-i; j++){
+
+    }
+}
+a.Mengapa syarat dari perulangan i adalah i<listMhs.length-1 ?
+Jawaban:Karena dalam bubble sort, setiap perulangan akan menempatkan satu data pada posisi yang benar (biasanya di bagian akhir). Jadi jika ada n data, cukup dilakukan n-1 kali perulangan saja. Elemen terakhir tidak perlu dicek lagi karena sudah pasti berada di posisi yang benar.
+b.Mengapa syarat dari perulangan j adalah j<listMhs.length-i ?
+Jawaban:Karena setiap perulangan i, bagian belakang array sudah dalam keadaan terurut. Jadi tidak perlu dibandingkan lagi. Dengan begitu, program jadi lebih efisien karena tidak melakukan pengecekan yang tidak perlu.
+c.Jika banyak data di dalam listMhs adalah 50, maka berapakali perulangan i  akan berlangsung? Dan ada berapa Tahap bubble sort yang ditempuh?
+Jawaban:Jika jumlah data 50, maka:
+Perulangan i berlangsung sebanyak 49 kali
+Tahap bubble sort juga sebanyak 49 tahap
+Karena rumusnya adalah n - 1 → 50 - 1 = 49
+2.	Modifikasi program diatas dimana data mahasiswa bersifat dinamis (input dari keyborad) yang terdiri dari nim, nama, kelas, dan ipk!
